@@ -1,5 +1,7 @@
 # Docker Lifecycle
 
+<img width="1614" height="730" alt="image" src="https://github.com/user-attachments/assets/180b3805-885c-442c-8341-ebe2be9d4055" />
+
 Docker follows a structured lifecycle that enables efficient application deployment. The three fundamental steps in the Docker lifecycle are:
 
 ## 1. Dockerfile Creation  
