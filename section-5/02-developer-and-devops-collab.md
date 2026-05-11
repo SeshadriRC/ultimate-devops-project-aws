@@ -22,4 +22,9 @@
 - In this video abhishek just ran go based application locally in EC2 by following the readme.md file of product catalog service
 - It should show the output like below
 <img width="1872" height="801" alt="image" src="https://github.com/user-attachments/assets/bf11a582-65f4-4546-974b-c9f5bfa80883" />
+
 - Install the go locally before executing the command.
+- 
+
+<img width="1289" height="208" alt="image" src="https://github.com/user-attachments/assets/12910ea6-bea0-4a35-b30a-8d9e88756f94" />
+
