@@ -9,6 +9,6 @@
 
 - Just go to the directory of cloned repo and run `docker compose up -d`.
 
-- Make sure before running docker compose, increase the volume size to 30 GB . otherwise you will face storage issue.
+- Make sure before running docker compose, increase the volume size to 30 GB . otherwise you will face storage issue. Follow this SOP for [volume size increase](https://github.com/SeshadriRC/devops-cloud-interview-guide/blob/main/my-guide/AWS/EC2/03-EBS-Volume-size-increase.md)
 
 Video of the lecture is self explanatory.
