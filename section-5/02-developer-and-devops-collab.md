@@ -24,7 +24,14 @@
 <img width="1872" height="801" alt="image" src="https://github.com/user-attachments/assets/bf11a582-65f4-4546-974b-c9f5bfa80883" />
 
 - Install the go locally before executing the command.
-- 
+
 
 <img width="1289" height="208" alt="image" src="https://github.com/user-attachments/assets/12910ea6-bea0-4a35-b30a-8d9e88756f94" />
 
+<img width="1301" height="454" alt="image" src="https://github.com/user-attachments/assets/61f7cd46-465d-4c01-b85b-d2f31499b66a" />
+
+<img width="1348" height="185" alt="image" src="https://github.com/user-attachments/assets/ffee6531-42b5-47b5-98d0-4b79e7974303" />
+
+```
+-o means: It tells Go what filename to create after building the application.
+```
