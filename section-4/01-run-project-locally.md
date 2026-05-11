@@ -16,3 +16,15 @@
 
 <img width="1916" height="673" alt="image" src="https://github.com/user-attachments/assets/c0a8d196-2ff5-466d-b135-6f4137d547fb" />
 
+- Containers are running, will try to access.
+
+<img width="1861" height="367" alt="image" src="https://github.com/user-attachments/assets/85892db1-296a-440b-890a-c997e794680e" />
+
+- Access the application in below `port`. As security group already allowed port 8080, im able to access the application
+
+```bash
+http://65.0.102.186:8080/
+```
+
+<img width="1910" height="945" alt="image" src="https://github.com/user-attachments/assets/43adfb82-65a7-4b3c-b04a-cdc4d2e823a0" />
+
