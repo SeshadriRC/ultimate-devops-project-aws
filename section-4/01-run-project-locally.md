@@ -7,7 +7,7 @@
 <img width="1071" height="400" alt="image" src="https://github.com/user-attachments/assets/86b5fcea-3ff4-4cd9-8e12-462dd09703b7" />
 
 
-- Clone the Repo, Just go to the directory of cloned repo and run `docker compose up -d`.
+- Clone the [Repo](https://github.com/SeshadriRC/ultimate-devops-project-demo), Just go to the directory of cloned repo and run `docker compose up -d`.
 
 - Make sure before running docker compose, increase the volume size to 30 GB . otherwise you will face storage issue. Follow this SOP for [volume size increase](https://github.com/SeshadriRC/devops-cloud-interview-guide/blob/main/my-guide/AWS/EC2/03-EBS-Volume-size-increase.md)
 
