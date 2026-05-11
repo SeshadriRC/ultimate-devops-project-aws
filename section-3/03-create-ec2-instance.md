@@ -3,6 +3,10 @@
 ## **Introduction**
 Amazon EC2 (Elastic Compute Cloud) provides resizable compute capacity in the cloud. This guide will help beginners launch an EC2 instance and tackle common challenges they might face.
 
+`t2.large`
+
+<img width="1076" height="330" alt="image" src="https://github.com/user-attachments/assets/67eaad5e-6748-4e10-8a6c-be8f22cfdd14" />
+
 ---
 
 ## **Step-by-Step EC2 Instance Setup**
