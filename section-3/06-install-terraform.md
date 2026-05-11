@@ -1,3 +1,5 @@
+[follow doc](https://github.com/SeshadriRC/devops-cloud-interview-guide/blob/main/my-guide/Terraform/01-Install-Terraform.md)
+
 # Install Terraform on Ubuntu EC2
 
 ### Add Hashicorp repos
