@@ -1,3 +1,5 @@
+[follow doc](https://github.com/SeshadriRC/devops-cloud-interview-guide/blob/main/my-guide/Kubernetes/02-kubectl-install.md)
+
 # Kubectl Installation on Ubuntu EC2
 
 ### Download kubectl
