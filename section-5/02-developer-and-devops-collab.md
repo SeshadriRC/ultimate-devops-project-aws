@@ -36,6 +36,6 @@
 -o means: It tells Go what filename to create after building the application.
 ```
 
-- Its given expected output.
+- Run the binary, its given expected output.
 
 <img width="1256" height="212" alt="image" src="https://github.com/user-attachments/assets/33ef2a0c-bc45-4a0a-9d17-03b59e365d26" />
