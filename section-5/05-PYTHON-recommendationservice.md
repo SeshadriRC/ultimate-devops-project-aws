@@ -1,6 +1,10 @@
 # Containerization of a Python based microservice
 
 - Here are the steps that are involved in containerizing our Python based microservice. Same steps are also followed in the video.
+- I built manually, it worked.
+    - Python is already installed, so created virtual env
+    - Installed dependencies using `requirements.txt`
+    - ran `python recommendationss.py`
 
 ## **Stage 1: Base Image Setup**  
 This stage is responsible for **setting up the environment and installing dependencies** for the Python application.  
