@@ -38,6 +38,13 @@ This stage is responsible for **setting up the environment and installing depend
    - The application is executed with `python recommendation_server.py`.  
    - This runs the Python microservice when the container starts.  
 
+```bash
+docker build -t sesharc/recommendationservice:v1 .
+docker run sesharc/recommendationservice:v1
+```
+
+<img width="1894" height="854" alt="image" src="https://github.com/user-attachments/assets/506d26fd-914e-4a91-a248-92aaadc4e2e7" />
+
 ---
 
 ## **Summary**  
