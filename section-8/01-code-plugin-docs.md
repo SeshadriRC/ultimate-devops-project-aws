@@ -4,6 +4,8 @@
 
 Complete terraform files to create EKS in AWS VPC is available in the `eks-install` folder of this repo. This includes remote backend and statelocking implementation as well.
 
+[eks-install](https://github.com/SeshadriRC/ultimate-devops-project-aws/tree/main/eks-install)
+
 - `eks-install`: Folder that holds the complete terraform hcl files.
 - `backend`: Folder that holds hcl files for s3 bucket and dynamodb creation.
 - `modules`: Terraform Modules for VPC and EKS.
