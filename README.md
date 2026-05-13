@@ -2,7 +2,7 @@
 
 - This repository contains the complete notes for the Ultimate DevOps Project and Resume Preparation course prepared by `Abhishek Veeramalla` on Udemy.
 
-- Documentation is organized in Sections, the same way how videos are organized in the udemy course.
+- Documentation is organized in Sections (Totally 13 sections), the same way how videos are organized in the udemy course.
 
 <img width="545" height="786" alt="image" src="https://github.com/user-attachments/assets/75fabefa-d706-485e-b983-c3de80379225" />
 
