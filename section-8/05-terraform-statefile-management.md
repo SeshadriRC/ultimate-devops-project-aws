@@ -1,5 +1,10 @@
 # Managing Terraform Statefile using S3 Bucket and DynamoDB
 
+- Statefile is local in the first devops engineer Abhi
+
+<img width="1853" height="846" alt="image" src="https://github.com/user-attachments/assets/be45a630-f266-43e2-b3b0-056e960e7fb7" />
+
+
 ## **Problem Statement**
 Terraform stores its statefile locally by default, which can lead to several issues:
 1. **Collaboration Challenges**: When multiple users work on the same Terraform project, local statefiles create inconsistencies.
