@@ -1,3 +1,6 @@
+
+<img width="1727" height="907" alt="image" src="https://github.com/user-attachments/assets/649fbb91-70d8-4c77-88ff-934eb6086b17" />
+
 # Docker compose Overview in simple words
 
 ## **1. Services**  
@@ -39,3 +42,13 @@
 - **Volumes** store data that persists beyond container restarts.  
 
 With Docker Compose, you can **easily manage multi-container applications**! 🚀  
+
+### Practicals
+
+```bash
+# Run the containers, -d is for detached mode
+docker compose up -d    
+
+# Stop the containers
+docker compose down
+```
