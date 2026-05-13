@@ -29,6 +29,7 @@ Final takeaway:
 
 * Docker Init significantly simplifies Dockerfile creation, especially for supported programming languages, but basic Docker knowledge is still necessary for troubleshooting build issues.
 
+* First Clone the repo and proceed for below.
 ```bash
 user@LAPTOP-QMBUJPPJ MINGW64 /e/MyProjects/ultimate-devops-project-demo/src/shipping (main)
 $ mv Dockerfile Dockerfile-old
