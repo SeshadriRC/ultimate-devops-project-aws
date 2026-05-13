@@ -82,4 +82,7 @@ Final takeaway:
 <img width="1919" height="623" alt="image" src="https://github.com/user-attachments/assets/800a837f-2a32-45de-87e1-3bdd45c7bd00" />
 
 - After Push
+  
+<img width="1412" height="315" alt="image" src="https://github.com/user-attachments/assets/c4ba1e91-0b15-4f2d-a1ae-62978f1c5fb7" />
+
 <img width="1919" height="636" alt="image" src="https://github.com/user-attachments/assets/d510e921-a50a-408d-90b9-747a8abb1036" />
