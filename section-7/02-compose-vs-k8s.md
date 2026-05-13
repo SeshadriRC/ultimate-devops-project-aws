@@ -1,5 +1,8 @@
 # Docker Compose vs Kubernetes
 
+<img width="1556" height="804" alt="image" src="https://github.com/user-attachments/assets/28b5059d-9c32-4580-a14e-eaf25e999e29" />
+
+
 ### Docker Compose
 
 ### Management of Multi-Container Applications 
