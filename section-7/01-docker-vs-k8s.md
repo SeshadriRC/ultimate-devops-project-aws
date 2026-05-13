@@ -1,5 +1,8 @@
 # Docker vs Kubernetes
 
+<img width="1408" height="691" alt="image" src="https://github.com/user-attachments/assets/2b24bc67-666b-4323-9e8a-438c3f360955" />
+
+
 ## **1. Containers Are Ephemeral**  
 - Docker runs containers, but **containers are temporary** and can stop anytime.  
 - If a container crashes, Docker does not restart it automatically.  
