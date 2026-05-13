@@ -81,4 +81,5 @@ Final takeaway:
 - Before Push
 <img width="1919" height="623" alt="image" src="https://github.com/user-attachments/assets/800a837f-2a32-45de-87e1-3bdd45c7bd00" />
 
-
+- After Push
+<img width="1919" height="636" alt="image" src="https://github.com/user-attachments/assets/d510e921-a50a-408d-90b9-747a8abb1036" />
