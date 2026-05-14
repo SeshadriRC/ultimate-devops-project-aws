@@ -81,7 +81,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 
 - Below is the yaml , which abhi used for practical purpose. However doc contains extra parameters in the block
 
-```yaml
+```hcl
 provider "aws" {
   region = "ap-south-1"
 }
