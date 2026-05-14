@@ -48,3 +48,104 @@ Kubernetes services provide a way to expose applications running on a set of Pod
 ## Conclusion
 
 Choosing the right service type depends on the specific requirements of your application. ClusterIP is best for internal communication, NodePort for simple external access, LoadBalancer for external access.
+
+---
+
+# Summary
+
+## Kubernetes Service Types Summary
+
+In Kubernetes, services are mainly of 3 types:
+
+### 1. ClusterIP (Default)
+
+* Allows communication only **inside the Kubernetes cluster**
+* Used for:
+
+  * Service-to-service communication
+  * Internal applications
+  * Databases or sensitive services
+* External users, EC2 instances, or Lambda functions cannot directly access it
+* Secure because it is limited to the cluster network
+
+Example:
+
+```bash
+frontend-service.default.svc.cluster.local
+```
+
+---
+
+### 2. NodePort
+
+* Exposes the service on a port of each Kubernetes node
+* External systems inside the VPC/network can access it using:
+
+```bash
+<Node-IP>:<NodePort>
+```
+
+Example:
+
+```bash
+10.0.1.5:33000
+```
+
+How it works:
+
+* Kubernetes assigns a unique port (usually 30000–32767)
+* kube-proxy updates iptables internally
+* Requests reaching the node port are forwarded to the service/pod
+
+Use case:
+
+* Access from:
+
+  * EC2 instances
+  * Internal corporate network
+  * Applications inside the VPC
+
+---
+
+### 3. LoadBalancer
+
+* Used for public/external internet access
+* When service type is changed to `LoadBalancer`:
+
+  * Kubernetes API Server talks to CCM (Cloud Controller Manager)
+  * CCM communicates with cloud providers like:
+
+    * Amazon Web Services
+    * Microsoft Azure
+  * Cloud provider creates an external load balancer automatically
+
+Result:
+
+```bash
+External-IP --> LoadBalancer --> Kubernetes Service --> Pods
+```
+
+Use case:
+
+* Public websites
+* Frontend applications
+* APIs accessible from the internet
+
+---
+
+## Key Points
+
+| Service Type | Accessible From      | Main Use                 |
+| ------------ | -------------------- | ------------------------ |
+| ClusterIP    | Inside cluster only  | Internal communication   |
+| NodePort     | VPC/Internal network | Internal external access |
+| LoadBalancer | Internet/Public      | Public applications      |
+
+---
+
+## Important Concept
+
+Kubernetes creates its own internal cluster network using CNI (Container Network Interface). By default, services inside this network are not reachable from outside unless exposed using:
+
+* NodePort
+* LoadBalancer
