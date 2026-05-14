@@ -1,3 +1,11 @@
+# Practicals
+
+- Modify the service type from ClusterIP to LoadBalancer, then it will create a LB. you can able to access it.
+
+<img width="1919" height="521" alt="image" src="https://github.com/user-attachments/assets/15913e43-1490-4ada-b29b-5df7e8102fa0" />
+
+
+
 # Kubernetes Service Types
 
 Kubernetes services provide a way to expose applications running on a set of Pods as a network service. Kubernetes supports several types of services, each suited to different use cases.
