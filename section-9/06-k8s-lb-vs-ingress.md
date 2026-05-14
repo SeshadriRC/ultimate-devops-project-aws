@@ -1,5 +1,8 @@
 # Kubernetes: LoadBalancer Service Type vs Ingress
 
+<img width="1917" height="898" alt="image" src="https://github.com/user-attachments/assets/21aea574-59c2-4544-a6d6-763bf73dfe8d" />
+
+
 In Kubernetes, both LoadBalancer service type and Ingress are used to expose services to external traffic. However, they serve different purposes and have distinct characteristics. This document explains the differences between the two in detail.
 
 ## LoadBalancer Service Type
