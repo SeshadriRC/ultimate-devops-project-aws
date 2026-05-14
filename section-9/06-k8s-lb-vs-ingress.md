@@ -52,3 +52,223 @@ In Kubernetes, both LoadBalancer service type and Ingress are used to expose ser
 ## Conclusion
 
 Both LoadBalancer service type and Ingress are essential tools in Kubernetes for exposing services to external traffic. The choice between them depends on the specific requirements of your application. Use LoadBalancer for simple, single-service exposure and Ingress for more complex scenarios requiring advanced routing and secure access.
+
+---
+
+# Summary
+
+## Summary — LoadBalancer Service Type vs Ingress in Kubernetes
+
+In the previous lecture, the frontend application was exposed using a Kubernetes Service of type `LoadBalancer`.
+
+Flow:
+
+```text
+Kubernetes Service (LoadBalancer)
+        ↓
+API Server
+        ↓
+Cloud Controller Manager (CCM)
+        ↓
+AWS creates Load Balancer
+        ↓
+External users access application
+```
+
+This works, but it has several drawbacks.
+
+---
+
+# Drawbacks of LoadBalancer Service Type
+
+## 1. Not Fully Declarative
+
+Only the service type is defined in Kubernetes YAML.
+
+Example:
+
+```yaml id="1z64cb"
+type: LoadBalancer
+```
+
+But advanced configurations like:
+
+* HTTPS/TLS certificates
+* Routing rules
+* Health checks
+* Security settings
+* Load balancing algorithms
+
+must be changed manually in the cloud console (AWS UI).
+
+Problem:
+
+* Changes are not tracked in YAML
+* Harder to maintain
+* Not fully Infrastructure-as-Code
+
+---
+
+## 2. Costly
+
+If 10 microservices need external access:
+
+* Kubernetes creates 10 separate cloud load balancers
+
+This becomes expensive in:
+
+* Amazon Web Services
+* Microsoft Azure
+* Google Cloud
+
+---
+
+## 3. Limited Flexibility
+
+Using `LoadBalancer` service type usually ties you to the cloud provider’s default load balancer.
+
+Example in AWS:
+
+* ALB/NLB gets created automatically
+
+But you cannot easily switch to:
+
+* NGINX
+* F5
+* Traefik
+* Envoy
+
+---
+
+## 4. Depends on Cloud Controller Manager (CCM)
+
+`LoadBalancer` service type works only when CCM exists.
+
+Not supported properly in:
+
+* Minikube
+* Kind
+* K3s local clusters
+
+Without CCM:
+
+* External load balancer is not created
+
+---
+
+# Why Ingress is Better
+
+Ingress is a Kubernetes resource used for advanced HTTP/HTTPS routing.
+
+Advantages:
+
+## 1. Declarative Configuration
+
+Everything is written in YAML:
+
+* TLS
+* Routing
+* Paths
+* Hosts
+* Annotations
+* Load balancer behavior
+
+Example:
+
+```yaml id="s6vfpk"
+kind: Ingress
+```
+
+---
+
+## 2. Cost Effective
+
+Instead of:
+
+* 10 Load Balancers for 10 services
+
+Ingress allows:
+
+* 1 Load Balancer
+* Multiple routes/target groups
+
+Example:
+
+```text
+/app1 → Service1
+/app2 → Service2
+/api  → Service3
+```
+
+---
+
+## 3. More Flexible
+
+Ingress Controllers can use different technologies:
+
+* NGINX
+* F5
+* Traefik
+* Envoy
+* HAProxy
+
+You are not locked to cloud-provider load balancers.
+
+---
+
+## 4. Works Without CCM
+
+Ingress can work even in:
+
+* Minikube
+* Kind
+* Local Kubernetes clusters
+
+No dependency on cloud-managed load balancers.
+
+---
+
+# Main Advantage of LoadBalancer Service Type
+
+It is very simple.
+
+Just:
+
+```yaml id="v7f0uc"
+type: LoadBalancer
+```
+
+No need for:
+
+* Ingress YAML
+* Ingress Controller
+* Extra configuration
+
+So it reduces operational complexity, but sacrifices flexibility and scalability.
+
+---
+
+# Interview Important Point
+
+A very common interview question:
+
+> Difference between LoadBalancer Service Type and Ingress
+
+### LoadBalancer
+
+* Easy to configure
+* Creates separate load balancer per service
+* Less flexible
+* Costly
+* Cloud dependent
+
+### Ingress
+
+* Declarative
+* Advanced routing
+* Cost effective
+* Flexible
+* Better for production environments
+
+---
+
