@@ -1,5 +1,8 @@
 # Code explanation for VPC module
 
+<img width="1919" height="930" alt="image" src="https://github.com/user-attachments/assets/3c5cb7c9-75f7-4ca8-b8fe-0a6ae702fe71" />
+
+
 ## **1. Creating a VPC**
 ```hcl
 resource "aws_vpc" "main" {
