@@ -76,3 +76,18 @@ resource "aws_dynamodb_table" "terraform_locks" {
 - The table is used for **state locking**, preventing concurrent modifications to the statefile.
 - `billing_mode = "PAY_PER_REQUEST"` ensures cost-effective pricing based on actual usage.
 - The primary key (`hash_key`) is `LockID`, ensuring unique entries for locks.
+
+### Practicals
+
+
+- S3 bucket
+
+<img width="1386" height="482" alt="image" src="https://github.com/user-attachments/assets/b5a593e2-a44d-4d12-9ee5-6cc1b7559236" />
+
+
+- DyanomoDB table
+
+<img width="1919" height="469" alt="image" src="https://github.com/user-attachments/assets/a751942d-b798-4248-bd4a-5e29f9f3d2e3" />
+
+
+
