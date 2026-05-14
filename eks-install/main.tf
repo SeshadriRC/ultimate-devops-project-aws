@@ -19,6 +19,8 @@ provider "aws" {
   region = var.region
 }
 
+# This is where you are invoking the modules which you have created.
+
 module "vpc" {
   source = "./modules/vpc"
 
