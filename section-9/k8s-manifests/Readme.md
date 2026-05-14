@@ -1,0 +1,2 @@
+- Deploy `serviceaccount.yml`
+- Deploy `complete-deploy.yaml`
