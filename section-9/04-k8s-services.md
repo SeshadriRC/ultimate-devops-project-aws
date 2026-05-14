@@ -1,5 +1,9 @@
 # Kubernetes Services
 
+<img width="1754" height="792" alt="image" src="https://github.com/user-attachments/assets/4c8510c4-000d-4d3c-a6fa-1852a1cc2bc2" />
+
+<img width="1817" height="705" alt="image" src="https://github.com/user-attachments/assets/b0a1b82f-9e97-455b-aa0e-d6400ad9841a" />
+
 ## What is a Kubernetes Service?
 
 A Kubernetes Service is an abstraction that defines a logical set of Pods and a policy by which to access them. Services enable communication between different components of an application deployed in a Kubernetes cluster. They provide a stable endpoint (IP address and port) for accessing a set of Pods, regardless of their lifecycle.
