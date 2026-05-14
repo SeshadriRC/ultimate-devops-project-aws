@@ -31,9 +31,6 @@ In the above example, the `serviceAccountName` field specifies the Service Accou
 
 ---
 
-### Summarized
-
-
 # Summary
 
 * In demo Kubernetes projects, people often deploy pods without explicitly creating a Service Account.
