@@ -1,5 +1,8 @@
 # Code explanation for EKS module
 
+<img width="1597" height="899" alt="image" src="https://github.com/user-attachments/assets/8d8d658d-289b-47d6-a966-ec32666acbbe" />
+
+
 ## **1. Creating IAM Role for EKS Cluster**
 ```hcl
 resource "aws_iam_role" "cluster" {
