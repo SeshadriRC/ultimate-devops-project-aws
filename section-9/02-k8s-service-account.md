@@ -28,3 +28,165 @@ spec:
 ```
 
 In the above example, the `serviceAccountName` field specifies the Service Account to be used by the pod. If this field is omitted, the default Service Account in the namespace will be used.
+
+---
+
+### Summarized
+
+
+# Summary
+
+* In demo Kubernetes projects, people often deploy pods without explicitly creating a Service Account.
+* In real-world environments, every pod should ideally use a dedicated Service Account.
+
+---
+
+# User Account vs Service Account
+
+## User Account
+
+Used by humans such as:
+
+* DevOps engineers
+* Developers
+* Administrators
+
+Purpose:
+
+* Access Kubernetes cluster
+* Use `kubectl`
+* Access Kubernetes UI/dashboard
+
+User accounts use:
+
+* kubeconfig
+* authentication credentials
+
+---
+
+## Service Account
+
+Used by:
+
+* Pods
+* Applications
+* Microservices
+* Controllers
+
+Purpose:
+
+* Allow services running inside Kubernetes to interact with the cluster/API.
+
+---
+
+# Important Concept
+
+Every pod in Kubernetes must run with a Service Account.
+
+If you do not specify one manually:
+
+```text id="jlwm6q"
+Kubernetes automatically assigns
+the default Service Account
+from that namespace.
+```
+
+You can verify it using:
+
+```bash id="jlwm6q"
+kubectl get sa
+```
+
+or
+
+```bash id="jlwm6q"
+kubectl get sa -n kube-system
+```
+
+---
+
+# Default Service Account
+
+Kubernetes creates a `default` Service Account in every namespace.
+
+This default account gives minimal permissions such as:
+
+* allowing pods to run
+
+This is why demo applications work even without explicitly creating Service Accounts.
+
+---
+
+# Why Service Accounts Need Permissions
+
+Sometimes applications need to:
+
+* access Kubernetes API server
+* read ConfigMaps
+* manage resources
+* build controllers/operators
+* use webhooks/admission controllers
+
+For such cases, the Service Account requires additional permissions.
+
+---
+
+# How Permissions Are Given
+
+## Step 1: Create Role or ClusterRole
+
+Defines permissions.
+
+Examples:
+
+* read pods
+* access ConfigMaps
+* manage deployments
+
+---
+
+## Step 2: Bind Role to Service Account
+
+Using:
+
+* `RoleBinding`
+* `ClusterRoleBinding`
+
+This connects:
+
+* Service Account → Role
+
+---
+
+# Flow
+
+```text id="jlwm6q"
+Pod
+ ↓
+Service Account
+ ↓
+Role / ClusterRole
+ ↓
+Permissions
+```
+
+---
+
+# AWS Analogy
+
+This is similar to AWS IAM:
+
+| AWS               | Kubernetes       |
+| ----------------- | ---------------- |
+| IAM User/Role     | Service Account  |
+| IAM Policy        | Role/ClusterRole |
+| Policy Attachment | RoleBinding      |
+
+---
+
+# Key Takeaway
+
+* Demo projects often rely on the default Service Account.
+* Production workloads should use dedicated Service Accounts.
+* Service Accounts allow pods to securely access Kubernetes resources.
+* Additional permissions are controlled using Roles and RoleBindings.
