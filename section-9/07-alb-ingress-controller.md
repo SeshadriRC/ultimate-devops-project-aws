@@ -1,8 +1,13 @@
 # How to setup alb add on
 
+<img width="1361" height="668" alt="image" src="https://github.com/user-attachments/assets/aad59c5b-2042-4cc0-9cc9-7255740d6748" />
+
+
 ##  Setup OIDC Connector
 
 #### commands to configure IAM OIDC provider 
+
+- full form of OIDC is OpenIDconnect
 
 ```
 export cluster_name=demo-cluster
