@@ -14,9 +14,6 @@ kubectl apply -f ingress.yaml
 
 <img width="930" height="233" alt="image" src="https://github.com/user-attachments/assets/49240d5c-9381-4ba9-8be7-e681fda509fd" />
 
-
-<img width="889" height="267" alt="image" src="https://github.com/user-attachments/assets/19c966e8-0688-4126-9bcf-bb8cdb3f84c7" />
-
 - Now if you hit `example.com` you are able to view the website.
 
 <img width="592" height="189" alt="image" src="https://github.com/user-attachments/assets/98860ffe-d786-46a6-a5b9-8cfb6955547a" />
