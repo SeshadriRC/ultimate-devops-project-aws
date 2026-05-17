@@ -89,7 +89,7 @@ jobs:
         - name: checkout code
           uses: actions/checkout@v4
           with:
-            token: ${{ secrets.GITHUB_TOKEN }}   # Here we are pushing to the repo, hence logging with token
+            token: ${{ secrets.MY_GITHUB_TOKEN }}   # Here we are pushing to the repo, hence logging with token. Myprofile --> Settings -> Developer Settings -> PAT -> Token(classic) -> generate new (classic) -> give all the permissions
 
         - name: Update tag in kubernetes deployment manifest
           run: | 
@@ -97,11 +97,24 @@ jobs:
         
         - name: Commit and push changes
           run: |
-            git config --global user.email "abhishek@gmail.com"
-            git config --global user.name "Abhishek Veeramalla"
+            git config --global user.email "seshaec1999@gmail.com"
+            git config --global user.name "SeshadriRC"
             git add kubernetes/productcatalog/deploy.yaml
             git commit -m "[CI]: Update product catalog image tag"
             git push origin HEAD:main -f
 
 
 ```
+
+- Docker PAT
+
+<img width="1919" height="757" alt="image" src="https://github.com/user-attachments/assets/8f68a457-07a5-4fe8-b362-1842bd446500" />
+
+
+- Docker username
+
+<img width="1919" height="337" alt="image" src="https://github.com/user-attachments/assets/904c7c57-4607-467c-990d-b3247b92650a" />
+
+- Git PAT
+
+<img width="1919" height="849" alt="image" src="https://github.com/user-attachments/assets/ad95b1aa-1b36-4182-bcab-733045ed5833" />
