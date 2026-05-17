@@ -2,6 +2,10 @@
 <img width="1593" height="690" alt="image" src="https://github.com/user-attachments/assets/8fe8fe7b-7d30-4b27-b4df-5a32f22642ce" />
 
 
+**Plugins Required**
+
+- YAML
+- Github Actions
 
 ## Summary
 
