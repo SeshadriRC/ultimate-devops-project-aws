@@ -68,8 +68,8 @@ jobs:
         - name: Login to Docker
           uses: docker/login-action@v3
           with:
-            username: ${{ secrets.DOCKER_USERNAME }}    # Create this in github -> specific repo -> secrets and variables -> Actions -> New repo secrets
-            password: ${{ secrets.DOCKER_TOKEN }}
+            username: ${{ secrets.DOCKER_USERNAME }}    # Create this in github -> specific repo -> secrets and variables -> Actions -> New repo secrets, so here docker username is sesharc
+            password: ${{ secrets.DOCKER_TOKEN }}       # login to docker ui -> my profile in top right -> PAT -> Generate new token
 
         - name: Docker Push
           uses: docker/build-push-action@v6
