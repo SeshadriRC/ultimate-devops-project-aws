@@ -89,7 +89,7 @@ jobs:
         - name: checkout code
           uses: actions/checkout@v4
           with:
-            token: ${{ secrets.GITHUB_TOKEN }}
+            token: ${{ secrets.GITHUB_TOKEN }}   # Here we are pushing to the repo, hence logging with token
 
         - name: Update tag in kubernetes deployment manifest
           run: | 
